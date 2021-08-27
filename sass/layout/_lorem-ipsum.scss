@@ -1,0 +1,40 @@
+.lorem-ipsum {
+  padding-top: 94px;
+  justify-content: center;
+}
+.lorem-ipsum__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.276;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.lorem-ipsum__icon {
+  background-color: var(--fifth-color);
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+}
+.lorem-ipsum__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.lorem-ipsum__header {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

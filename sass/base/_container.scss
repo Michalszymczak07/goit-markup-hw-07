@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  .footer & {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 60px;
+  }
+  .header & {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+  }
+  .hero & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

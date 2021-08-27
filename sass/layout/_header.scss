@@ -1,0 +1,148 @@
+.header__container { 
+  display: flex;
+}
+.header > .container {
+  justify-content: space-between;
+}
+.header__line {
+  border-bottom: 1px solid #ececec;
+}
+
+.header {
+  background: var(--fourth-color);
+}
+
+.nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+margin-right: 46px;
+  &:hover,
+  &:focus {
+    color: var(--main-color);
+  }
+  
+}
+.nav__link--active {
+  color: var(--main-color);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 4px;
+    background: var(--main-color);
+    border-radius: 2px;
+    top: 46px;
+    left: 0px;
+  }
+}
+
+
+.nav__item,
+.contact__top {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contact__link {
+  fill: var(--main-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em; 
+  color: orange;
+  &:hover{
+    color: var(--main-color);
+    fill: var(--main-color);
+  }
+  &:hover .contact-envelope__icon {
+    color: var(--main-color);
+    fill: var(--main-color);
+  }
+}
+.contact {
+  text-decoration: none;
+}
+.contact__top {
+ 
+  white-space: nowrap;
+}
+.contact__link {
+  fill: var(--third-color);;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--third-color);
+
+  &:focus {
+    color: var(--main-color);
+    fill: var(--main-color);
+  }
+}
+.contact__top .contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: var(--third-color);
+  text-decoration: none;
+}
+
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7142;
+
+  .contact__top & {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: var(--third-color);
+    text-decoration: none;
+  }
+  &:hover {
+    color: var(--main-color);
+  }
+}
+
+.contact-phone__icon {
+  width: 10px;
+  height: 16px;
+  margin-left: 30px;
+  margin-right: 10px;
+
+  &:hover {
+    fill: var(--main-color);
+  }
+}
+
+.contact-envelope__icon-link {
+  &:focus {
+    color: var(--main-color);
+    fill: var(--main-color);
+  }
+}
+
+.contact-envelope__icon {
+  fill: var(--third-color);
+  text-decoration: none;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  &:hover {
+    fill: var(--main-color);
+  }
+}
